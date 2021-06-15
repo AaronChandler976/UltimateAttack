@@ -26,13 +26,13 @@ const objectNoun = ['beast', 'lake', 'mind', 'star', 'storm', 'vortex'];
 // Generate attack phrase
 function generateAttack() {
     // Generate random words from each word bank
-    const aNoun1 = attackNoun[randNum(attackNoun.length)];
-    const aNoun2 = attackNoun[randNum(attackNoun.length)];
-    const aAdj1 = attackAdj[randNum(attackAdj.length)];
-    const aAdj2 = attackAdj[randNum(attackAdj.length)];
-    const pNoun = possessiveNoun[randNum(possessiveNoun.length)];
-    const oAdj = objectAdj[randNum(objectAdj.length)];
-    const oNoun = objectNoun[randNum(objectNoun.length)];
+    let aNoun1 = attackNoun[randNum(attackNoun.length)];
+    let aNoun2 = attackNoun[randNum(attackNoun.length)];
+    let aAdj1 = attackAdj[randNum(attackAdj.length)];
+    let aAdj2 = attackAdj[randNum(attackAdj.length)];
+    let pNoun = possessiveNoun[randNum(possessiveNoun.length)];
+    let oAdj = objectAdj[randNum(objectAdj.length)];
+    let oNoun = objectNoun[randNum(objectNoun.length)];
     // Check for duplicate words
     while (aNoun1 === aNoun2) {
         aNoun2 = attackNoun[randNum(attackNoun.length)];
